@@ -33,7 +33,7 @@ nav:not(#mobile--nav) {
 
     nav{
         background-color: #fdfdfd;
-       
+        position: relative;
          @include flex-2;
         padding: 1em;
         border-radius: 4px;
@@ -56,4 +56,10 @@ nav:not(#mobile--nav) {
 
 
     }
+}
+.close--button{
+    @include svg-button;
+    position: absolute;
+    top: 4px;
+    right: 4px;
 }

@@ -11,7 +11,9 @@ require('dotenv').config({
 
 module.exports = {
   /* Your site config here */
-
+  siteMetadata: {
+    title: `Phifit Gym`,
+  },
 
   plugins: [
     {
@@ -30,9 +32,8 @@ module.exports = {
       },
     },
 
-    
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    
+    `gatsby-plugin-react-helmet`,
   ],
 }
