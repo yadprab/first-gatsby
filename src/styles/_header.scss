@@ -1,0 +1,46 @@
+header{
+    padding: 56px 16px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      height: 100vh;
+      color:#fff ;
+      display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+   
+
+   
+
+      h1{
+          font-weight: 700;
+          max-width: 532px;
+      }
+
+      p{
+          font-family: var(--font2);
+      }
+
+      button{
+          @include button;
+          background-color: var(--base);
+          font-size: 1rem;
+          padding: 0.75em 1em ;
+          min-width: 120px;
+          font-weight: 500;
+          color: #fff;
+           font-family: var(--font1);
+          place-self: flex-start;
+           &:hover{
+               background-color: #155a29;
+           }
+            &:active {
+              transform: scale(0.98);
+            }
+
+
+
+      }
+  
+}

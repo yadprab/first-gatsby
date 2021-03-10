@@ -1,0 +1,43 @@
+@media screen and (min-width:1110px){
+    
+    header{
+        padding: 120px 48px;
+       justify-items: start;
+    }
+
+    nav{
+       
+         button{
+             display: none;
+         }
+
+         .desktop--nav{
+             @include ul;
+
+             a{
+                 font-weight: 500;
+                 color: var(--shade-1);
+             }
+         }
+    }
+
+    .about--section{
+        grid-template-columns: 400px auto;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    main{
+        h3:not(.name){
+            text-align: center;
+        }
+    }
+    .gallery--section{
+        grid-template-columns: repeat(3,300px);
+        margin: 2em 0;
+    }
+
+    .cards--section{
+         grid-template-columns: repeat(3, 300px);
+    }
+}

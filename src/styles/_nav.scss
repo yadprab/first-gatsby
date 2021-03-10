@@ -1,0 +1,59 @@
+nav:not(#mobile--nav) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    z-index: 14000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      background: #212121;
+
+    button:not(#signup) {
+        @include svg-button;
+       
+    }
+}
+.desktop--nav{
+    display: none;
+}
+
+.overlay--section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    background: linear-gradient(180deg, #00000088 30%, #ffffff44 100%);
+    z-index: 15000;
+    padding: 1.5em;
+
+
+    nav{
+        background-color: #fdfdfd;
+       
+         @include flex-2;
+        padding: 1em;
+        border-radius: 4px;
+
+        ul{
+            @include ul;
+            flex-direction: column;
+         
+
+            li{
+                margin-bottom: 1em;
+            }
+
+            a{
+                font-weight: 500;
+                color: #212121;
+            }
+        }
+
+
+
+    }
+}
